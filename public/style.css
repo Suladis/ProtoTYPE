@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.instructions {
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.scorebox {
+    width: 200px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3498db; /* Blue */
+    border: 1px solid #2980b9; /* Darker Blue */
+    text-align: center;
+    line-height: 200px; /* Center content vertically */
+}
+
+.cell:hover {
+    background-color: #aeaea4; /* Darker Blue on hover */
+}

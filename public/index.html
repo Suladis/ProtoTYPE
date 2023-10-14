@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+
+</head>
+<body>
+    <div class="instructions">
+            <h1> Decide who starts first and then flip a coin</h1>
+    </div>
+    <div class="scoreboard">
+        <div class="scorebox">
+        <h1 class="scoreboard-header"> Scoreboard:</h1>
+        <div class="player1">
+            <h2 id="player1">Player 1:</h2>
+        </div>
+        <div class="player2">
+            <h2 id="player2">Player 2:</h2>
+
+        </div>
+    </div>
+    </div>
+    <div class="board">
+        <div>
+            <div class="cell" data-index="0" onclick="handleCellClick(this)"></div>
+            <div class="cell" data-index="1" onclick="handleCellClick(this)"></div>
+            <div class="cell" data-index="2" onclick="handleCellClick(this)"></div>
+        </div>
+        <div>
+            <div class="cell" data-index="3" onclick="handleCellClick(this)"></div>
+            <div class="cell" data-index="4" onclick="handleCellClick(this)"></div>
+            <div class="cell" data-index="5" onclick="handleCellClick(this)"></div>
+        </div>
+        <div>
+            <div class="cell" data-index="6" onclick="handleCellClick(this)"></div>
+            <div class="cell" data-index="7" onclick="handleCellClick(this)"></div>
+            <div class="cell" data-index="8" onclick="handleCellClick(this)"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
