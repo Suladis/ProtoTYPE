@@ -2,41 +2,80 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .instructions {
     margin-bottom: 20px;
 }
 
-.scoreboard {
+.gameboard {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.scorebox {
-    width: 200px;
+.playerscores {
+    display: flex;
+    flex-direction: row;
+    border: 10px solid blue;
+    width: 300px
+
+}
+
+.player1 {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.player2 { 
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.gameRes {
+    width: 100px;
+    height: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #868889; 
+    border: 1px solid #2980b9; 
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 200px; 
+    align-items: center;
 }
 
 .board {
     display: grid;
     grid-template-columns: repeat(3, 200px);
-    grid-gap: 10px;
+    grid-gap: 5px;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cell {
     width: 200px;
     height: 200px;
-    font-size: 24px;
+    font-size: 150px;
     cursor: pointer;
     color: #fff;
-    background-color: #3498db; /* Blue */
-    border: 1px solid #2980b9; /* Darker Blue */
+    background-color: #3498db; 
+    border: 1px solid #2980b9; 
+    margin-bottom: 5px;
     text-align: center;
-    line-height: 200px; /* Center content vertically */
+    line-height: 200px; 
+    border-radius: 500px;
 }
 
 .cell:hover {
-    background-color: #aeaea4; /* Darker Blue on hover */
+    background-color: #d96112; 
 }
