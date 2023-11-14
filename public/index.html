@@ -12,8 +12,11 @@
 <body>
     <div class="instructions">
             <h1>  Tic Tac Toe </h1>
+            
     </div>
-   
+    <div class="turnorder">
+    </div>
+   <div class="bigcontainer" style="visibility: hidden;">
     <div class="gameboard">
         <div class="player1">
             <h2 id="player1">Player X</h2>
@@ -42,12 +45,23 @@
     </div>
     <div class="player2">
         <h2 id="player2">Player O</h2>
-        <div class="gameRes" id="r1"></div>
-            <div class="gameRes" id="r2"></div>
-            <div class="gameRes" id="r3"></div>
-            <div class="gameRes" id="r4"></div>
-            <div class="gameRes" id="r5"></div>
+            <div class="gameRes" id="p1"></div>
+            <div class="gameRes" id="p2"></div>
+            <div class="gameRes" id="p3"></div>
+            <div class="gameRes" id="p4"></div>
+            <div class="gameRes" id="p5"></div>
     </div>
+</div>
+
+</div>
+<div class="playgamepopup">
+    <div id="pgp1">
+        <div id="pgp1">
+            <h1 id="intro">Would you like to play some Tic Tac Toe</h1>
+        </div>
+    </div>
+    <button id="playgame" type="button" onclick="playGame(0)">Play Game</button>
+
 </div>
 </body>
 </html>
