@@ -120,6 +120,8 @@ function checkWinner(currentPlayer, move) {
         if (cells.every(cell => cell.textContent === currentPlayer)) {
             let status = currentPlayer === 'X' ? 1 : 2;
             playGame(status);
+
+            
             return; 
         }
     }
